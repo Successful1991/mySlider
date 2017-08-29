@@ -48,6 +48,11 @@ body {
 .active {
   opacity: 1; }
 
+.active, .sl__img {
+  -webkit-transition: opacity 2s;
+  -o-transition: opacity 2s;
+  transition: opacity 2s; }
+
 .sl__next, .sl__prev {
   position: relative;
   height: 5rem;
