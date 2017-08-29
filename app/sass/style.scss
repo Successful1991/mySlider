@@ -1,0 +1,65 @@
+body{
+  font-size: 16px;
+}
+.sl{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  position: relative;
+
+}
+.sl__slider{
+  position: relative;
+  height: 500px;
+  left: -375px;
+}
+.sl__img{
+  position: absolute;
+  height: 500px;
+  width: 750px;
+  opacity: 0;
+}
+.sl__img img{
+  height: 100%;
+}
+.sl__img,.sl__next,.sl__prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.active{
+  opacity: 1;
+}
+.sl__next,.sl__prev{
+  position: relative;
+  height: 5rem;
+  width: 5rem;
+  border: 1.5px solid grey;
+  color: #ffffff;
+  opacity: 0.5;
+  z-index: 5;
+  box-sizing: border-box;
+  box-shadow: inset -1px -1px 3px 2px grey,inset 1px 1px 3px 2px grey;
+}
+.sl__next{
+  left: 380px;
+  border-radius: 50% ;
+}
+.sl__prev{
+  left: -380px;
+  border-radius: 50% ;
+}
+.sl__next::before,.sl__prev::before{
+  position: absolute;
+  content: "";
+  height: 64px;
+  width: 64px;
+  background-size: 64px;
+ }
+.sl__next::before{
+  background-image: url('../img/arrow-right.png');
+}
+.sl__prev::before{
+  background-image: url('../img/arrow-left.png');
+}
