@@ -79,10 +79,15 @@ body {
   content: "";
   height: 64px;
   width: 64px;
-  background-size: 64px; }
+  background-size: 32px;
+  background-repeat: no-repeat;
+  background-position: center center; }
 
 .sl__next::before {
-  background-image: url("../img/arrow-right.png"); }
+  background-image: url("../img/left.png"); }
 
 .sl__prev::before {
-  background-image: url("../img/arrow-left.png"); }
+  background-image: url("../img/left.png");
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }

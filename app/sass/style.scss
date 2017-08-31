@@ -11,6 +11,9 @@ body{
 }
 .sl__slider{
   position: relative;
+  //display: flex;
+  //align-items: center;
+  //width: 50vw;
   height: 500px;
   left: -375px;
 }
@@ -30,6 +33,11 @@ body{
 }
 .active{
   opacity: 1;
+}
+.active, .sl__img {
+  -webkit-transition: opacity 2s;
+  -o-transition: opacity 2s;
+  transition: opacity 2s;
 }
 .sl__next,.sl__prev{
   position: relative;
@@ -55,11 +63,16 @@ body{
   content: "";
   height: 64px;
   width: 64px;
-  background-size: 64px;
+  background-size: 32px;
+  background-repeat: no-repeat;
+  background-position: center center;
  }
 .sl__next::before{
-  background-image: url('../img/arrow-right.png');
+  background-image: url('../img/left.png');
 }
 .sl__prev::before{
-  background-image: url('../img/arrow-left.png');
+  background-image: url('../img/left.png');
+  transform: rotate(180deg);
+
+
 }
