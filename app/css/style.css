@@ -16,8 +16,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100vw;
-  position: relative; 
-  overflow-x: hidden;}
+  position: relative; }
 
 .sl__slider {
   position: relative;
