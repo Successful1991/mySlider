@@ -15,7 +15,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100vw;
-  position: relative; }
+  position: relative; 
+  overflow-x: hidden;}
 
 .sl__slider {
   position: relative;
@@ -26,8 +27,7 @@ body {
   position: absolute;
   height: 500px;
   width: 750px;
-  opacity: 0;
-  overflow-x: hidden;}
+  opacity: 0;}
 
 .sl__img img {
   height: 100%; }
