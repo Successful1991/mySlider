@@ -1,5 +1,6 @@
 body{
   font-size: 16px;
+  overflow-x: hidden;
 }
 .sl{
   display: flex;
@@ -11,9 +12,6 @@ body{
 }
 .sl__slider{
   position: relative;
-  //display: flex;
-  //align-items: center;
-  //width: 50vw;
   height: 500px;
   left: -375px;
 }
@@ -51,11 +49,11 @@ body{
   box-shadow: inset -1px -1px 3px 2px grey,inset 1px 1px 3px 2px grey;
 }
 .sl__next{
-  left: 380px;
+  left: 390px;
   border-radius: 50% ;
 }
 .sl__prev{
-  left: -380px;
+  left: -390px;
   border-radius: 50% ;
 }
 .sl__next::before,.sl__prev::before{
@@ -74,5 +72,29 @@ body{
   background-image: url('../img/left.png');
   transform: rotate(180deg);
 
-
+}
+@media screen and (max-width: 1000px){
+  .sl__slider{
+    height: 50vw;
+    left: -35vw;
+  }
+  .sl__img{
+    height: 50vw;
+    width: 70vw;
+  }
+  .sl__next{
+    left: 40vw;
+  }
+  .sl__prev{
+    left: -40vw;
+  }
+  .sl__next,.sl__prev {
+    height: 8vw;
+    width: 8vw;
+  }
+  .sl__next::before,.sl__prev::before{
+    height: 6.4vw;
+    width: 6.4vw;
+    background-size: 3.2vw;
+  }
 }
